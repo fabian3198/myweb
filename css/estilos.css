@@ -44,9 +44,26 @@ a:hover {
 #menu {
 	display: none;
 }
-.boton {
+nav {
 	height: 100%;
-	width: 18%;
+	width: 35%;
+	display: inline-block;
+	float: right;
+	box-sizing: border-box;
+	margin-right: 3%;
+}
+nav ul {
+	list-style: none;
+}
+#botones {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.boton{
+	height: 100%;
+	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -54,7 +71,6 @@ a:hover {
 	float: right;
 	font-family: centaur normal;
 	font-size: 1.4vw;
-	margin-right: 2%;
 }
 section {
 	height: 70%;
@@ -158,6 +174,20 @@ i {
 	#logo {
 		font-size: 3.4vw;
 		padding-left: 4%;
+	}
+	#menu {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	nav:hover ul {
+		display: block;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		background-color: gray;
 	}
 	.boton {
 		font-size: 3vw;
