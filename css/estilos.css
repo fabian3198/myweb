@@ -1,0 +1,194 @@
+@import url('normalize.css');
+
+html {
+	height: 100%;
+	width: 100%;
+	background-color: #00796b;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+header {
+	height: 15%;
+	width: 100%;
+	color: white;
+	display: block;
+	box-sizing: border-box;
+	background-color: #212121;
+	border-bottom: 4px solid cyan;
+}
+
+#logo {
+	width: 35%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	float: left;
+	font-family: cooper black;
+	font-size: 2vw;
+}
+
+.boton {
+	height: 100%;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	float: right;
+	font-family: centaur normal;
+	font-size: 1.4vw;
+
+}
+
+section {
+	height: 70%;
+	width: 100%;
+	display: block;
+}
+
+#texto {
+	height: 100%;
+	width: 60%;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	padding: 5% 0% 5% 10%;
+}
+
+h3 {
+	text-align: left;
+	font-size: 1.8vw;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2.3vw;
+}
+
+#parrafo1{
+	text-align: justify;
+	font-size: 1.4vw;
+	margin: 0;
+}
+
+#img1 {
+	height: 100%;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: right;
+}
+
+#img01 {
+	box-sizing: border-box;
+	padding: 6%;
+	width: 80%;
+}
+
+footer {
+	height: 15%;
+	width:100%;
+	box-sizing: border-box;
+	background-color: #212121;
+	border-top: 4px solid cyan;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+footer p {
+	color: white;
+	font-size: 1.4vw;	
+}
+
+	
+@media (max-width: 800px) and  (orientation: landscape){
+	#texto {
+		padding: 5% 0% 5% 8%;
+	}
+	#parrafo1 {
+		font-size: 1.8vw;
+	}
+}
+
+
+
+@media (orientation: portrait){
+	header {
+		height: 10%;
+	}
+	section {
+		height: 80%;
+	}
+	footer {
+		height: 10%;
+	}
+	#logo {
+		font-size: 3.4vw;
+		padding-left: 4%;
+	}
+	.boton {
+		font-size: 3vw;
+	}
+	#texto {
+		height: 40%;
+		width: 100%;
+		padding: 5%;
+		display: block;
+	}
+	h3 {
+		font-size: 3.6vw;
+	}
+	h2 {
+		font-size: 4vw;
+	}
+	#parrafo1 {
+		font-size: 3vw;
+	}
+	footer p {
+		font-size: 3vw;
+	}
+	#img1 {
+		height: 60%;
+		width: 100%;
+		float: none;
+		padding-top: 5%;
+	}
+	#img01 {
+		width: 50%;
+		padding:0; 
+	}
+}
+
+@media (max-width: 600px) and  (orientation: portrait){
+	#logo {
+		font-size: 3.5vw;
+			}
+	.boton {
+		font-size: 3.7vw;
+	}
+	h3 {
+		font-size: 3.8vw;
+	}
+	h2 {
+		font-size: 4.2vw;
+	}
+	#parrafo1 {
+		font-size: 3.7vw;
+	}
+	footer p {
+		font-size: 3.7vw;
+	}
+}
+
+
