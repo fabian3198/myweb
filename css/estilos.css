@@ -98,6 +98,10 @@ h2{
 	text-align: center;
 	font-size: 2.3vw;
 }
+h1{
+	text-align: center;
+	font-size: 2.3vw;
+}
 p{
 	text-align: justify;
 	font-size: 1.4vw;
@@ -184,12 +188,8 @@ i{
 	text-align: center;
 	color: #fff;
 }
-.slider .caption h1{
-	font-size: 2.4vw;
-}
 .slider .caption p{
-	margin-top: 3%;
-	font-size: 1.6vw;
+	padding: 4%;
 }
 .pagination{
 	position: absolute;
@@ -199,23 +199,24 @@ i{
 	margin: 0;
 	display: flex;
 	justify-content: center;
+	z-index: 1;
 }
 .pagination li{
-	font-size: 20px;
+	font-size: 1.1vw;
 	margin: 2px 5px;
 	color: #858585;
 	cursor: pointer;
 }
 .left, .right{
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	color: #fff;
-	font-size: 35px;
+	font-size: 2vw;
 	cursor: pointer;
-	z-index: 2;
+	z-index: 1;
 }
 .left{
 	left: 10px;
@@ -296,6 +297,9 @@ i{
 	h2{
 		font-size: 3.8vw;
 	}
+	h1{
+		font-size: 3.8vw;
+	}
 	p{
 		font-size: 2.8vw;
 	}
@@ -325,11 +329,23 @@ i{
 		margin: 0 0 8% 0;
 	}
 	#pcontacto{
-	padding: 10%;
+		padding: 10%;
+	}
+	#galeria{
+		display: flex;
+		align-items: center;
 	}
 	.slideshow{
-		padding-top: 15%;
 		height: 50%;
+	}
+	.slider .caption p{
+		padding: 5% 12%;
+	}
+	.pagination li{
+		font-size: 2.5vw;
+	}
+	.left, .right {
+		font-size: 5vw;
 	}
 }
 @media (max-width: 600px) and  (orientation: portrait){
