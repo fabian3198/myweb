@@ -24,10 +24,12 @@ header{
 a:link{
 	text-decoration: none;
 	color: white;
+	font-size: 1.4vw;
 }
 a:visited{
 	text-decoration: none;
-	color: white;;
+	color: white;
+	font-size: 1.4vw;
 }
 a:hover{
 	transform: scale(1.1,1.1);
@@ -129,7 +131,7 @@ footer{
 }
 				/* !!!CONTACTO!!! */
 #pcontacto{
-	padding: 3% 0% 3% 6%;
+	padding: 3% 6% 3% 6%;
 }
 #ulc{
 	width: 100%;
@@ -146,14 +148,6 @@ i{
 	font-size: 1.6vw;
 	display: inline-block;
 	margin-right: 4%;
-}
-@media (max-width: 800px) and  (orientation: landscape){
-	#texto{
-		padding: 5% 0% 5% 8%;
-	}
-	#parrafo1{
-		font-size: 1.8vw;
-	}
 }
 					/* !!!GALERIA!!! */
 .slideshow{
@@ -230,6 +224,20 @@ i{
 	right: 10px;
 }
 				/* MEDIA QUERTYES */
+@media (max-width: 800px) and  (orientation: landscape){
+	#texto{
+		padding: 5% 0% 5% 8%;
+	}
+	p{
+		font-size: 1.8vw;
+	}
+	a:link{
+		font-size: 1.8vw;
+	}
+	a:visited{
+		font-size: 1.8vw;
+	}
+}
 @media (orientation: portrait){
 	header{
 		height: 10%;
@@ -266,6 +274,7 @@ i{
 		background-color: gray;
 		opacity: 0.8;
 		margin: 0;
+		z-index: 1;
 	}
 	.boton{
 		font-size: 3vw;
@@ -287,10 +296,17 @@ i{
 	h2{
 		font-size: 3.8vw;
 	}
-	#parrafo1{
+	p{
 		font-size: 2.8vw;
 	}
-	footer p{
+	a:link{
+		text-decoration: none;
+		color: white;
+		font-size: 2.8vw;
+	}
+	a:visited{
+		text-decoration: none;
+		color: white;
 		font-size: 2.8vw;
 	}
 	#imgcnt{
@@ -306,7 +322,10 @@ i{
 		font-size: 4vw;
 	}
 	.contacto{
-		margin: 8% 0%;
+		margin: 0 0 8% 0;
+	}
+	#pcontacto{
+	padding: 10%;
 	}
 	.slideshow{
 		padding-top: 15%;
@@ -326,10 +345,7 @@ i{
 	h2{
 		font-size: 4.2vw;
 	}
-	#parrafo1{
-		font-size: 3.7vw;
-	}
-	footer p{
+	p{
 		font-size: 3.7vw;
 	}
 }
