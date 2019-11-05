@@ -1,16 +1,18 @@
 @import url('normalize.css');
-
-html {
+html{
 	height: 100%;
 	width: 100%;
 	background-color: #00796b;
 }
-body {
+ul, ol{
+	list-style: none;
+}
+body{
 	height: 100%;
 	width: 100%;
 	display: block;
 }
-header {
+header{
 	height: 15%;
 	width: 100%;
 	color: white;
@@ -19,7 +21,7 @@ header {
 	background-color: #212121;
 	border-bottom: 4px solid cyan;
 }
-a:link {
+a:link{
 	text-decoration: none;
 	color: white;
 }
@@ -27,10 +29,10 @@ a:visited{
 	text-decoration: none;
 	color: white;;
 }
-a:hover {
+a:hover{
 	transform: scale(1.1,1.1);
 }
-#logo {
+#logo{
 	width: 35%;
 	height: 100%;
 	display: flex;
@@ -41,13 +43,13 @@ a:hover {
 	font-family: cooper black;
 	font-size: 2vw;
 }
-#menubt {
+#menubt{
 	display: none;
 }
-#menu {
+#menu{
 	display: none;
 }
-nav {
+nav{
 	height: 100%;
 	width: 35%;
 	display: inline-block;
@@ -55,8 +57,7 @@ nav {
 	box-sizing: border-box;
 	margin-right: 3%;
 }
-nav ul {
-	list-style: none;
+nav ul{
 	height: 100%;
 	width: 100%;
 	margin: 0;
@@ -73,12 +74,12 @@ nav ul {
 	font-family: centaur normal;
 	font-size: 1.4vw;
 }
-section {
+section{
 	height: 70%;
 	width: 100%;
 	display: block;
 }
-#texto {
+#texto{
 	height: 100%;
 	width: 60%;
 	display: block;
@@ -86,22 +87,22 @@ section {
 	box-sizing: border-box;
 	padding: 5% 0% 5% 10%;
 }
-h3 {
+h3{
 	text-align: left;
 	font-size: 1.8vw;
 	margin: 0;
 }
-h2 {
+h2{
 	text-align: center;
 	font-size: 2.3vw;
 }
-p {
+p{
 	text-align: justify;
 	font-size: 1.4vw;
 	margin: 0;
 	box-sizing: border-box;
 }
-#imgcnt {
+#imgcnt{
 	height: 100%;
 	width: 40%;
 	box-sizing: border-box;
@@ -110,12 +111,12 @@ p {
 	justify-content: center;
 	float: right;
 }
-#img1 {
+#img1{
 	box-sizing: border-box;
 	padding: 6%;
 	width: 80%;
 }
-footer {
+footer{
 	height: 15%;
 	width:100%;
 	box-sizing: border-box;
@@ -126,53 +127,124 @@ footer {
 	justify-content: center;
 	color: white;
 }
-/* Contacto */
-#pcontacto {
+				/* !!!CONTACTO!!! */
+#pcontacto{
 	padding: 3% 0% 3% 6%;
 }
-section ul {
+#ulc{
 	width: 100%;
 	padding-left: 10%;
 	box-sizing: border-box;
 }
-.contacto {
+.contacto{
 	display: block;
 	width: 100%;
 	margin: 2% 0;
 	font-size: 1.3vw;
 }
-section li {
-	margin: 1%;
-	list-style: none;
-}
-i {
+i{
 	font-size: 1.6vw;
 	display: inline-block;
 	margin-right: 4%;
 }
 @media (max-width: 800px) and  (orientation: landscape){
-	#texto {
+	#texto{
 		padding: 5% 0% 5% 8%;
 	}
-	#parrafo1 {
+	#parrafo1{
 		font-size: 1.8vw;
 	}
 }
+					/* !!!GALERIA!!! */
+.slideshow{
+	width: 100%;
+	position: relative;
+	height: 100%;
+	display: flex;
+}
+.slider li, ul{
+	width: 100%;
+}
+.slider {
+	display: flex;
+	margin: 0;
+	padding:0;
+	height: 100%;
+	overflow: hidden;
+}
+.slider li img{
+	width: 100%;
+	height: 100%;
+}
+.slider .caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+.slider .caption h1{
+	font-size: 2.4vw;
+}
+.slider .caption p{
+	margin-top: 3%;
+	font-size: 1.6vw;
+}
+.pagination{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+.left{
+	left: 10px;
+}
+.right{
+	right: 10px;
+}
+				/* MEDIA QUERTYES */
 @media (orientation: portrait){
-	header {
+	header{
 		height: 10%;
 	}
-	section {
+	section{
 		height: 80%;
 	}
-	footer {
+	footer{
 		height: 10%;
 	}
-	#logo {
+	#logo{
 		font-size: 3.4vw;
 		padding-left: 4%;
 	}
-	#menubt {	
+	#menubt{	
 		float: right;	
 		height: 100%;
 		width: 15%;
@@ -181,10 +253,10 @@ i {
 		justify-content: center;
 		font-size: 5vw;
 	}
-	#menu:checked ~ nav {
+	#menu:checked ~ nav{
 		display: block;
 	}
-	nav {
+	nav{
 		display: none;
 		position: absolute;
 		right: 0;
@@ -195,7 +267,7 @@ i {
 		opacity: 0.8;
 		margin: 0;
 	}
-	.boton {
+	.boton{
 		font-size: 3vw;
 		width: 100%;
 		height: 50%;
@@ -203,57 +275,61 @@ i {
 		align-items: center;
 		justify-content: center;
 	}
-	#texto {
+	#texto{
 		height: 40%;
 		width: 100%;
 		padding: 5%;
 		display: block;
 	}
-	h3 {
+	h3{
 		font-size: 3.5vw;
 	}
-	h2 {
+	h2{
 		font-size: 3.8vw;
 	}
-	#parrafo1 {
+	#parrafo1{
 		font-size: 2.8vw;
 	}
-	footer p {
+	footer p{
 		font-size: 2.8vw;
 	}
-	#imgcnt {
+	#imgcnt{
 		height: 60%;
 		width: 100%;
 		float: none;
 	}
-	#img1 {
+	#img1{
 		width: 55%;
 		padding:0; 
 	}
-	i {
+	i{
 		font-size: 4vw;
 	}
-	section li {
+	.contacto{
 		margin: 8% 0%;
+	}
+	.slideshow{
+		padding-top: 15%;
+		height: 50%;
 	}
 }
 @media (max-width: 600px) and  (orientation: portrait){
-	#logo {
+	#logo{
 		font-size: 3.5vw;
 			}
-	.boton {
+	.boton{
 		font-size: 3.7vw;
 	}
-	h3 {
+	h3{
 		font-size: 3.8vw;
 	}
-	h2 {
+	h2{
 		font-size: 4.2vw;
 	}
-	#parrafo1 {
+	#parrafo1{
 		font-size: 3.7vw;
 	}
-	footer p {
+	footer p{
 		font-size: 3.7vw;
 	}
 }
